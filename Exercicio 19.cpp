@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main(){
+    char letra;
+    printf("\n Informe uma letra qualquer\n\n");
+    scanf("%c",&letra);
+    letra = toupper(letra);
+    if(letra=='A' || letra=='E' || letra=='I' || letra=='O' || letra=='U'){
+        printf("Sua letra e uma vogal");
+    }else{
+        printf("Sua letra e uma consoante");
+    }
+    return 0;
+}
