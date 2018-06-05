@@ -5,13 +5,13 @@ using namespace std;
 int ciclo = 0;
 
 void imprimeColorido () {
-    //Escolhe randomicamente um padr„o de cor entre 4 opÁıes.
+    //Escolhe randomicamente um padr√£o de cor entre 4 op√ß√µes.
     
     HANDLE hConsole;    
     hConsole = GetStdHandle (STD_OUTPUT_HANDLE);
     int xRan;
-    xRan=rand()%4+1; //Escolhe randomicamente um n˙mero entre 1 e 4.
-    //Padr„o de cor 1
+    xRan=rand()%4+1; //Escolhe randomicamente um n√∫mero entre 1 e 4.
+    //Padr√£o de cor 1
     if (xRan == 1) {
         if (ciclo == 0)
             SetConsoleTextAttribute (hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
@@ -23,7 +23,7 @@ void imprimeColorido () {
             SetConsoleTextAttribute (hConsole, 2);
         printf ("*");
     }
-    //Padr„o de cor 2
+    //Padr√£o de cor 2
     else if (xRan == 2) {
         if (ciclo == 0)
             SetConsoleTextAttribute (hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
@@ -35,7 +35,7 @@ void imprimeColorido () {
             SetConsoleTextAttribute (hConsole, FOREGROUND_RED | FOREGROUND_INTENSITY);
         printf ("*");
     }
-    //Padr„o de cor 3
+    //Padr√£o de cor 3
     else if (xRan == 3) {
         if (ciclo == 0)
             SetConsoleTextAttribute (hConsole, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
@@ -47,7 +47,7 @@ void imprimeColorido () {
             SetConsoleTextAttribute (hConsole, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
         printf ("*");
     }
-    //Padr„o de cor 4
+    //Padr√£o de cor 4
     else if (xRan == 4) {
         if (ciclo == 0)
             SetConsoleTextAttribute (hConsole, 2);
@@ -74,7 +74,7 @@ int main () {
      system("cls");
      for (int hh = 0; hh < 4; hh++) {  //Pisca 4 vezes
 
-        //imprime a copa da ·rvore
+        //imprime a copa da √°rvore
          for (cont=1; cont<=numero; cont++){
               for (j=numero; j>=cont; j--)
                 printf (" ");
@@ -83,7 +83,7 @@ int main () {
             }
               printf ("\n");
          }
-         //imprime o tronco da ·rvore.
+         //imprime o tronco da √°rvore.
           for (cont2=numero/1.5; cont2<numero; cont2++){
               for (n=2; n<=k/2; n++)
                    printf (" ");
@@ -93,7 +93,7 @@ int main () {
         Sleep(1000);
         
         system("cls");
-        if (hh == 3) { //N„o deixa apagar a tela apÛs a ˙ltima piscada
+        if (hh == 3) { //N√£o deixa apagar a tela ap√≥s a √∫ltima piscada
             hh    = 0;
             ciclo = 0;
         }
