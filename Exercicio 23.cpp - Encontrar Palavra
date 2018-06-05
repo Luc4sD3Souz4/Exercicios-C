@@ -47,7 +47,7 @@ int main (){
 	if (resultado == 1) {
 		printf("\nA palavra \"%s\" foi encontrada na frase.\n\n", palavra);
 	} else {
-		printf("\nA palavra \"%s\" n„o foi encontrada na frase.\n\n", palavra);
+		printf("\nA palavra \"%s\" n√£o foi encontrada na frase.\n\n", palavra);
 	}
 		
 	system("pause");
