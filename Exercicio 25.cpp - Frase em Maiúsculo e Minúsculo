@@ -11,6 +11,6 @@ main(){
 	printf("Escreva uma frase: ");
 	gets(frase);
 
-	printf("\nFrase em maiúsculo: %s", strupr(frase));
-	printf("\nFrase em minúsculo: %s", strlwr(frase));
+	printf("\nFrase em maiÃºsculo: %s", strupr(frase));
+	printf("\nFrase em minÃºsculo: %s", strlwr(frase));
 }
