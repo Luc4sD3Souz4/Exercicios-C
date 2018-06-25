@@ -9,6 +9,7 @@ main () {
 		mes;
 		
 	printf("Digite o seu nome: ");
+	gets("nome");
 	fgets(nome, sizeof(nome), stdin);
 	strtok(nome, "\n");
 	printf("Digite o dia do seu aniversario: ");
